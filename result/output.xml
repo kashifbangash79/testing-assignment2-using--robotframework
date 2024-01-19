@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.11 on win32)" generated="2024-01-19T23:30:51.941962" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\kashi\Desktop\assignment 2 tests\tests.robot">
+<test id="s1-t1" name="Verify if the user has open the app" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:30:52.138726" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3003/'.</msg>
+<arg>http://localhost:3003/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-19T23:30:52.138726" elapsed="2.533900"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-01-19T23:30:54.674382" elapsed="0.133869"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:30:54.898876" level="INFO">Current page contains text 'Welcome to My Bookstore'.</msg>
+<arg>Welcome to My Bookstore</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-01-19T23:30:54.810003" elapsed="0.088873"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-19T23:30:57.909366" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-19T23:30:54.904309" elapsed="3.005057"/>
+</kw>
+<status status="PASS" start="2024-01-19T23:30:52.138726" elapsed="5.771670"/>
+</test>
+<test id="s1-t2" name="Click on Explore me button" line="14">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:30:57.913345" level="INFO">Clicking button '//*[@id="navbarNav"]/ul/li[1]/button'.</msg>
+<arg>//*[@id="navbarNav"]/ul/li[1]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T23:30:57.913345" elapsed="0.093470"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:30:58.064156" level="INFO">Current page contains text 'Login!'.</msg>
+<arg>Login!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-01-19T23:30:58.007810" elapsed="0.056346"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-19T23:31:01.071234" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-19T23:30:58.064156" elapsed="3.007078"/>
+</kw>
+<status status="PASS" start="2024-01-19T23:30:57.912442" elapsed="3.159815"/>
+</test>
+<test id="s1-t3" name="Check for User login" line="18">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:01.076240" level="INFO">Typing text 'kashifkhankk799872@gmail.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>kashifkhankk799872@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T23:31:01.076240" elapsed="0.212901"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:01.290412" level="INFO">Typing text 'Kashif' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>Kashif</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T23:31:01.290412" elapsed="0.121313"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:01.411725" level="INFO">Clicking button 'xpath://button[contains(text(), 'Login!')]'.</msg>
+<arg>xpath://button[contains(text(), 'Login!')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T23:31:01.411725" elapsed="0.068560"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:01.526206" level="INFO">Current page contains text 'div'.</msg>
+<arg>div</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-01-19T23:31:01.480285" elapsed="0.045921"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-19T23:31:04.531190" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-19T23:31:01.526206" elapsed="3.004984"/>
+</kw>
+<status status="PASS" start="2024-01-19T23:31:01.076240" elapsed="3.456518"/>
+</test>
+<test id="s1-t4" name="Check the search functionality" line="28">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:04.546499" level="INFO">Typing text 'the kite runner' into text field 'css=input[type='text']'.</msg>
+<arg>css=input[type='text']</arg>
+<arg>the kite runner</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T23:31:04.532758" elapsed="0.176635"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:04.709393" level="INFO">Clicking button '//*[@id="basic-navbar-nav"]/form/button'.</msg>
+<arg>//*[@id="basic-navbar-nav"]/form/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T23:31:04.709393" elapsed="0.071306"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-19T23:31:06.788199" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-19T23:31:04.780699" elapsed="2.007500"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:06.852352" level="INFO">Current page contains text 'div'.</msg>
+<arg>div</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-01-19T23:31:06.789505" elapsed="0.062847"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-19T23:31:08.867549" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-19T23:31:06.852352" elapsed="2.015197"/>
+</kw>
+<status status="PASS" start="2024-01-19T23:31:04.532758" elapsed="4.334791"/>
+</test>
+<test id="s1-t5" name="Check sign up functionality" line="39">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:08.879838" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3003/'.</msg>
+<arg>http://localhost:3003/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-19T23:31:08.874512" elapsed="2.497966"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-01-19T23:31:11.372478" elapsed="0.133158"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:11.612567" level="INFO">Current page contains text 'Welcome to My Bookstore'.</msg>
+<arg>Welcome to My Bookstore</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-01-19T23:31:11.514016" elapsed="0.098551"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-19T23:31:14.618340" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-19T23:31:11.614918" elapsed="3.003422"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:14.618340" level="INFO">Clicking button '//*[@id="navbarNav"]/ul/li[2]/button'.</msg>
+<arg>//*[@id="navbarNav"]/ul/li[2]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T23:31:14.618340" elapsed="0.087078"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:14.758728" level="INFO">Current page contains text 'Sign up'.</msg>
+<arg>Sign up</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-01-19T23:31:14.706935" elapsed="0.051793"/>
+</kw>
+<status status="PASS" start="2024-01-19T23:31:08.874512" elapsed="5.884216"/>
+</test>
+<test id="s1-t6" name="Users should Register themselves" line="47">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:14.758728" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3003/'.</msg>
+<arg>http://localhost:3003/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-19T23:31:14.758728" elapsed="2.365351"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-01-19T23:31:17.127168" elapsed="0.131508"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:17.344312" level="INFO">Current page contains text 'Welcome to My Bookstore'.</msg>
+<arg>Welcome to My Bookstore</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-01-19T23:31:17.260480" elapsed="0.083832"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-19T23:31:20.348909" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-19T23:31:17.347974" elapsed="3.000935"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:20.352720" level="INFO">Clicking button '//*[@id="navbarNav"]/ul/li[2]/button'.</msg>
+<arg>//*[@id="navbarNav"]/ul/li[2]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T23:31:20.352720" elapsed="0.100661"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:20.530372" level="INFO">Current page contains text 'Sign up'.</msg>
+<arg>Sign up</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-01-19T23:31:20.454863" elapsed="0.075509"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:20.531373" level="INFO">Typing text 'John Doe' into text field 'id=name'.</msg>
+<arg>id=name</arg>
+<arg>John Doe</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T23:31:20.531373" elapsed="0.131587"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:20.664169" level="INFO">Typing text 'john.doe@example.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>john.doe@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T23:31:20.664169" elapsed="0.125555"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:20.791824" level="INFO">Typing text 'samplePassword' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>samplePassword</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T23:31:20.791824" elapsed="0.116835"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:20.910252" level="INFO">Typing text 'samplePassword' into text field 'id=confirmPassword'.</msg>
+<arg>id=confirmPassword</arg>
+<arg>samplePassword</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T23:31:20.910252" elapsed="0.127168"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:21.039479" level="INFO">Clicking button '//*[@id="root"]/div/section/div/div/div/div/div/div/div/form/div[6]/button'.</msg>
+<arg>//*[@id="root"]/div/section/div/div/div/div/div/div/div/form/div[6]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T23:31:21.037420" elapsed="0.059381"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-19T23:31:23.105226" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-19T23:31:21.096801" elapsed="2.008425"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:23.155213" level="INFO">Current page contains text 'div'.</msg>
+<arg>div</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-01-19T23:31:23.105226" elapsed="0.049987"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-19T23:31:25.162626" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-19T23:31:23.155213" elapsed="2.007413"/>
+</kw>
+<status status="PASS" start="2024-01-19T23:31:14.758728" elapsed="10.403898"/>
+</test>
+<test id="s1-t7" name="Test Logout" line="63">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:25.162626" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3003/'.</msg>
+<arg>http://localhost:3003/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-19T23:31:25.162626" elapsed="2.445825"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-01-19T23:31:27.610465" elapsed="0.143860"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:27.857457" level="INFO">Current page contains text 'Welcome to My Bookstore'.</msg>
+<arg>Welcome to My Bookstore</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-01-19T23:31:27.757310" elapsed="0.100147"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-19T23:31:30.867247" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-19T23:31:27.859455" elapsed="3.007792"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:30.869438" level="INFO">Clicking button '//*[@id="navbarNav"]/ul/li[3]/button'.</msg>
+<arg>//*[@id="navbarNav"]/ul/li[3]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T23:31:30.868246" elapsed="0.106695"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:30.976246" level="INFO">Typing text 'kashifkhankk799872@gmail.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>kashifkhankk799872@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T23:31:30.976246" elapsed="0.194019"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:31.171367" level="INFO">Typing text 'Kashif' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>Kashif</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T23:31:31.171367" elapsed="0.100046"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:31.272405" level="INFO">Clicking button 'xpath://button[contains(text(), 'Login!')]'.</msg>
+<arg>xpath://button[contains(text(), 'Login!')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T23:31:31.272405" elapsed="0.071366"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-19T23:31:34.347314" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-19T23:31:31.344779" elapsed="3.002535"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:34.347314" level="INFO">Typing text 'the kite runner' into text field 'css=input[type='text']'.</msg>
+<arg>css=input[type='text']</arg>
+<arg>the kite runner</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T23:31:34.347314" elapsed="0.141209"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:34.488523" level="INFO">Clicking button '//*[@id="basic-navbar-nav"]/form/button'.</msg>
+<arg>//*[@id="basic-navbar-nav"]/form/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T23:31:34.488523" elapsed="0.066489"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-19T23:31:36.561150" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-19T23:31:34.555012" elapsed="2.006138"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:36.605460" level="INFO">Current page contains text 'div'.</msg>
+<arg>div</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-01-19T23:31:36.563221" elapsed="0.042239"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-19T23:31:38.612201" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-19T23:31:36.605460" elapsed="2.006741"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:38.614234" level="INFO">Clicking button '//*[@id="basic-navbar-nav"]/div[2]/button'.</msg>
+<arg>//*[@id="basic-navbar-nav"]/div[2]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T23:31:38.614234" elapsed="0.106839"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:38.770934" level="INFO">Current page contains text 'Welcome to My Bookstore'.</msg>
+<arg>Welcome to My Bookstore</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-01-19T23:31:38.722072" elapsed="0.048862"/>
+</kw>
+<status status="PASS" start="2024-01-19T23:31:25.162626" elapsed="13.609319"/>
+</test>
+<test id="s1-t8" name="Test Successful Login" line="83">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:38.775025" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3003//login'.</msg>
+<arg>${BASE_URL}/login</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-19T23:31:38.775025" elapsed="2.477786"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:41.252811" level="INFO">Typing text 'testuser@example.com' into text field 'id=email'.</msg>
+<msg time="2024-01-19T23:31:41.916530" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-01-19T23:31:41.916530" level="FAIL">Element with locator 'id=email' not found.</msg>
+<arg>id=email</arg>
+<arg>testuser@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-01-19T23:31:41.252811" elapsed="0.663719">Element with locator 'id=email' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>testpassword</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-01-19T23:31:41.916530" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css=button.btn-primary</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-01-19T23:31:41.916530" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-01-19T23:31:41.916530" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Search Results</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2024-01-19T23:31:41.923132" elapsed="0.001179"/>
+</kw>
+<status status="FAIL" start="2024-01-19T23:31:38.773957" elapsed="3.153521">Element with locator 'id=email' not found.</status>
+</test>
+<test id="s1-t9" name="Test Failed Login" line="91">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:41.934525" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3003//login'.</msg>
+<arg>${BASE_URL}/login</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-19T23:31:41.932794" elapsed="2.747144"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:44.679938" level="INFO">Typing text 'invaliduser@example.com' into text field 'id=email'.</msg>
+<msg time="2024-01-19T23:31:45.646732" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-01-19T23:31:45.646732" level="FAIL">Element with locator 'id=email' not found.</msg>
+<arg>id=email</arg>
+<arg>invaliduser@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-01-19T23:31:44.679938" elapsed="0.966794">Element with locator 'id=email' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>invalidpassword</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-01-19T23:31:45.646732" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css=button.btn-primary</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-01-19T23:31:45.646732" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-01-19T23:31:45.646732" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<arg>Search Results</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="NOT RUN" start="2024-01-19T23:31:45.646732" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-01-19T23:31:41.929234" elapsed="3.717498">Element with locator 'id=email' not found.</status>
+</test>
+<test id="s1-t10" name="Test Search Books No Results" line="99">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:45.657125" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3003//search'.</msg>
+<arg>${BASE_URL}/search</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-19T23:31:45.655962" elapsed="2.609816"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:48.267058" level="INFO">Typing text 'non-existent book' into text field 'css=input.form-control'.</msg>
+<msg time="2024-01-19T23:31:49.020509" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-01-19T23:31:49.020509" level="FAIL">Element with locator 'css=input.form-control' not found.</msg>
+<arg>css=input.form-control</arg>
+<arg>non-existent book</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-01-19T23:31:48.265778" elapsed="0.754731">Element with locator 'css=input.form-control' not found.</status>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css=button.btn-outline-success</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-01-19T23:31:49.020509" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-01-19T23:31:49.020509" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>No results found.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2024-01-19T23:31:49.033106" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-01-19T23:31:45.646732" elapsed="3.386374">Element with locator 'css=input.form-control' not found.</status>
+</test>
+<test id="s1-t11" name="Test Home Page" line="107">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:49.041580" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3003/'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-19T23:31:49.041580" elapsed="2.733893"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:51.855330" level="INFO">Current page contains text 'Welcome to My Bookstore'.</msg>
+<arg>Welcome to My Bookstore</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-01-19T23:31:51.775473" elapsed="0.080921"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:51.938559" level="INFO">Current page contains text 'Explore Now'.</msg>
+<arg>Explore Now</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-01-19T23:31:51.856394" elapsed="0.082165"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:52.015138" level="INFO">Current page contains text 'Sign Up for Free'.</msg>
+<arg>Sign Up for Free</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-01-19T23:31:51.939068" elapsed="0.076070"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:52.088485" level="INFO">Current page does not contain text 'Logout'.</msg>
+<arg>Logout</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2024-01-19T23:31:52.016881" elapsed="0.071604"/>
+</kw>
+<status status="PASS" start="2024-01-19T23:31:49.038913" elapsed="3.052085"/>
+</test>
+<test id="s1-t12" name="Test Navigation from Home to Login" line="115">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:52.095436" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3003/'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-19T23:31:52.090998" elapsed="2.772883"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:54.867882" level="INFO">Clicking button 'xpath=//button[contains(text(), 'Explore Now')]'.</msg>
+<arg>xpath=//button[contains(text(), 'Explore Now')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T23:31:54.866885" elapsed="0.190584"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-19T23:31:57.062932" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-19T23:31:55.058494" elapsed="2.004438"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:57.118165" level="INFO">Current page contains text 'Login!'.</msg>
+<arg>Login!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-01-19T23:31:57.064695" elapsed="0.053470"/>
+</kw>
+<status status="PASS" start="2024-01-19T23:31:52.090998" elapsed="5.027167"/>
+</test>
+<test id="s1-t13" name="Test Navigation from Home to Signup" line="121">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:57.121077" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3003/'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-19T23:31:57.121077" elapsed="2.530374"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:31:59.653203" level="INFO">Clicking button 'xpath=//button[contains(text(), 'Sign Up for Free')]'.</msg>
+<arg>xpath=//button[contains(text(), 'Sign Up for Free')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-19T23:31:59.653203" elapsed="0.132838"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-19T23:32:01.790488" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-19T23:31:59.786041" elapsed="2.004447"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-01-19T23:32:01.838563" level="INFO">Current page contains text 'Sign up'.</msg>
+<arg>Sign up</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-01-19T23:32:01.791499" elapsed="0.047747"/>
+</kw>
+<status status="PASS" start="2024-01-19T23:31:57.118165" elapsed="4.722636"/>
+</test>
+<status status="FAIL" start="2024-01-19T23:30:51.945975" elapsed="69.897853"/>
+</suite>
+<statistics>
+<total>
+<stat pass="10" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="10" fail="3" skip="0" id="s1" name="Tests">Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
